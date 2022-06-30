@@ -1,0 +1,45 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.introducao h1 {
+  color: #fffbfe;
+  font-family: "Noto Sans";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 87px;
+  text-align: center;
+  margin-top: 130px;
+  position: relative;
+}
+
+.introducao h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 139px;
+  background: url("../img/dark/detalhe.svg") no-repeat center;
+  position: absolute;
+  top: 85px;
+  right: 185px;
+  z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao h1 {
+    font-size: 2rem;
+  }
+}
